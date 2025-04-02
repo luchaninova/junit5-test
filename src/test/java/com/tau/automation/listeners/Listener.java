@@ -24,7 +24,7 @@ public class Listener implements TestWatcher {
     public void testAborted(ExtensionContext context, Throwable cause) {
         TestWatcher.super.testAborted(context, cause);
         System.out.println("--------------------------------");
-        System.out.println("Test was aborted: " + context.getTestMethod() + " with cause: " + cause);
+        System.out.println("Test was aborted: " + context.getTestMethod() + " with cause of abortion is: " + cause);
     }
 
     @Override
