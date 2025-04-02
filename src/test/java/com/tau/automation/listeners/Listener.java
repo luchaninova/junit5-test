@@ -10,7 +10,7 @@ public class Listener implements TestWatcher {
     public void testDisabled(ExtensionContext context, Optional<String> reason) {
         TestWatcher.super.testDisabled(context, reason);
         System.out.println("--------------------------------");
-        System.out.println("This test is disabled: " + context.getTestMethod() + " with reason: " + reason);
+        System.out.println("This test is disabled: " + context.getTestMethod() + " with the reason: " + reason);
     }
 
     @Override
